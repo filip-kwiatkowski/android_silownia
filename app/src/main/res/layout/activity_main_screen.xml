@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ekran_glowny" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <Button
+            android:id="@+id/rezerwacje"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginVertical="10dp"
+            android:onClick="onClickRezerwacja"
+            android:text="Twoje rezerwacje" />
+
+        <Button
+            android:id="@+id/zapisy"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginVertical="10dp"
+            android:onClick="onClickZapisy"
+            android:text="Zapisz się" />
+
+        <Button
+            android:id="@+id/historia"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginVertical="10dp"
+            android:onClick="onClickHistoria"
+            android:text="Historia" />
+
+        <Button
+            android:id="@+id/ustawienia"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginVertical="10dp"
+            android:onClick="onClickUstawienia"
+            android:text="Ustawienia" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
